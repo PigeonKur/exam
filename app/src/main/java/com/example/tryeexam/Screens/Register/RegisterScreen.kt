@@ -162,3 +162,11 @@ fun RegisterScreen(
         viewModel.resetState()
     }
 }
+
+//Политика для таблицы. На ALL, public
+//alter policy "Policy with security definer functions"
+//on "public"."User"
+////to public
+//using (
+//true
+//;

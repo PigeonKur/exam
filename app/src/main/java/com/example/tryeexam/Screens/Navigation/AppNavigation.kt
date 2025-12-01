@@ -4,9 +4,10 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.tryeexam.Screens.AddUser.AddScreen
 import com.example.tryeexam.Screens.Login.LoginScreen
 import com.example.tryeexam.Screens.Login.LoginViewModel
-import com.example.tryeexam.Screens.MainScreen
+import com.example.tryeexam.Screens.Main.MainScreen
 import com.example.tryeexam.Screens.Register.RegisterScreen
 
 @Composable
@@ -30,6 +31,9 @@ fun AppNavigator(loginViewModel: LoginViewModel) {
         }
         composable("main") {
             MainScreen(navController = navController)
+        }
+        composable("addUser") {
+            AddScreen(navController = navController)
         }
     }
 }
