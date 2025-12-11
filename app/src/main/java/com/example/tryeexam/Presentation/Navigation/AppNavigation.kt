@@ -1,14 +1,13 @@
-package com.example.tryeexam.Screens.Navigation
+package com.example.tryeexam.secondTrye.Presentation.Navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.tryeexam.Screens.AddUser.AddScreen
-import com.example.tryeexam.Screens.Login.LoginScreen
-import com.example.tryeexam.Screens.Login.LoginViewModel
-import com.example.tryeexam.Screens.Main.MainScreen
-import com.example.tryeexam.Screens.Register.RegisterScreen
+import com.example.tryeexam.secondTrye.Presentation.Screens.Login.LoginScreen
+import com.example.tryeexam.secondTrye.Presentation.Screens.Login.LoginViewModel
+import com.example.tryeexam.secondTrye.Presentation.Screens.MainScreen.MainScreen
+import com.example.tryeexam.secondTrye.Presentation.Screens.Register.RegisterScreen
 
 @Composable
 fun AppNavigator(loginViewModel: LoginViewModel) {
@@ -32,8 +31,6 @@ fun AppNavigator(loginViewModel: LoginViewModel) {
         composable("main") {
             MainScreen(navController = navController)
         }
-        composable("addUser") {
-            AddScreen(navController = navController)
-        }
+
     }
 }
